@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import { gerarTema } from '../utils/gemini';
-import { escolherImagem } from '../utils/foto';
+import { imageChoice } from '../utils/foto'; // Corrigido o nome da função importada
 import { corrigirRedacao } from '../utils/corrigirImagem';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   const handleCorrigir = async () => {
-    const imgBase64 = await escolherImagem();
+    const imgBase64 = await imageChoice(); // Corrigido o nome da função chamada
     if (imgBase64) {
       const result = await corrigirRedacao(imgBase64);
       setResposta(result);

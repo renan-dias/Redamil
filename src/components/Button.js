@@ -1,8 +1,8 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
-export default function Button(title, OnPress){
+export default function Button({ title, onPress }){ // Corrigido para receber props como objeto e nome da prop onPress
     return (
-        <TouchableOpacity style={styles.button} OnPress={OnPress}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     );
