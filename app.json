@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "T30",
-    "slug": "T30",
+    "name": "RedaTech",
+    "slug": "RT",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo_p30.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/logo_p30.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
